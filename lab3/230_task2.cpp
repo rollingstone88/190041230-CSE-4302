@@ -9,7 +9,7 @@ private:
 
 public:
 
-    void assign(int _numerator ,int denominator)
+    void assign(int numerator ,int denominator)
     {
         if(denominator == 0)
         {
@@ -21,7 +21,7 @@ public:
     }
     double convert()
     {
-        return (double)Numerator/(double)Denominator;
+        return (double)Numerator/Denominator;
     }
     void invert()
     {
