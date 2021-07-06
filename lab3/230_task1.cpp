@@ -35,22 +35,23 @@ public:
 
 int main()
 {
-    Counter hollow, hello, cnt(4);
-    hollow.setIncrementStep(6);
-    hollow.increment();
-    cout<<"after incrementing once :"<<hollow.getCount()<<"\n";
+    Counter h1, h2, cnt(4);
 
-    hollow.increment();
-    cout<<"after incrementing twice :"<<hollow.getCount()<<"\n";
-    hollow.resetCount();
+    h1.setIncrementStep(6);
+    h1.increment();
+    cout<<"after incrementing once :"<<h1.getCount()<<"\n";
+
+    h1.increment();
+    cout<<"after incrementing twice :"<<h1.getCount()<<"\n";
+    h1.resetCount();
     cout<<"after resetting :";
-    cout<<hollow.getCount()<<"\n";
+    cout<<h1.getCount()<<"\n";
     cout<<"Initial count :";
-    cout<<hello.getCount()<<"\n";
-    hello.setIncrementStep(5);
-    hello.increment();
+    cout<<h2.getCount()<<"\n";
+    h2.setIncrementStep(5);
+    h2.increment();
     cout<<"after incrementing once :";
-    cout<<hello.getCount()<<"\n";
+    cout<<h2.getCount()<<"\n";
 
     cout<<"Initial count :";
     cout<<cnt.getCount()<<"\n";
