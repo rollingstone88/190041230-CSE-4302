@@ -4,7 +4,7 @@ using namespace std;
 class Counter
 {
 private:
-    int count, incr_step; //member data
+    int count, incr_step;
 
 public:
     Counter():count(0)
