@@ -34,7 +34,7 @@ public:
         cout<<"Seat information:\ncomfortability: "<<comfortability<<"\n";
         cout<<"Presence of Seat warmer: ";
         if(seat_warmer)
-            cout<<"YES\n\n+";
+            cout<<"YES\n\n";
         else
             cout<<"NO\n\n";
     }
