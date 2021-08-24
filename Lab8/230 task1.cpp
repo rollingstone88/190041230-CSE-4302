@@ -143,9 +143,22 @@ private:
     float maximum_acceleration, fuel_capacity, Load_capacity;
 
 public:
-    Truck(float max_acc, float f_c, float l_c):maximum_acceleration(max_acc), fuel_capacity(f_c), Load_capacity(l_c)
+    Truck(float max_acc, float f_c, float l_c, string c, bool seat_warm, float r, float mfc, float mep, float avg, string opmode):maximum_acceleration(max_acc), fuel_capacity(f_c), Load_capacity(l_c)
     {
+        for(int i=0; i<2; ++i)
+        {
+            s[i].set_data(c,seat_warm);
+        }
+        for(int i=0; i<6; ++i)
+        {
+            w[i].set_radius(r);
+        }
+         e.set_data(mfc,mep,avg);
 
+        for(int i=0; i<2; ++i)
+        {
+            d[i].set_open_mode(opmode);
+        }
     }
 
     set_info()
@@ -195,10 +208,8 @@ public:
 };
 
 
-
 int main()
 {
-    Truck t(1000,5000,400);
-    t.set_info();
+    Truck t(1000,5000,400,"Pleasant",1,5.5,122,233,445,"Sideways");
     t.display();
 }
