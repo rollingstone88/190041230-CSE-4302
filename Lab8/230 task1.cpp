@@ -11,7 +11,7 @@ public:
     {
 
     }
-    Seat(string c, bool ):comfortability(c),seat_warmer(s)
+    Seat(string c, bool s):comfortability(c),seat_warmer(s)
     {
 
     }
